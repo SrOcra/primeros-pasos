@@ -1,0 +1,40 @@
+var num = 4
+var num2 = 3
+
+
+fun main() {
+    var operacion = 3	
+    println (operacion(operacion))
+   }
+
+
+fun operacion (operacion: Int):Any{
+  return when(operacion){
+        1 -> suma()
+        2 -> resta()
+        3 -> multiplica()
+        4 -> divide()
+        5 -> modulo()
+        else -> "error"
+   }     
+ }
+
+
+  fun suma():Int{
+		return (num+num2)
+   }
+    
+  fun resta():Int{
+		return (num-num2)
+   }
+  fun multiplica():Int{
+		return num*num2
+   }
+   fun divide():Int{
+		return num/num2
+   }
+   fun modulo():Int{
+		return num%num2
+       
+       
+   }
