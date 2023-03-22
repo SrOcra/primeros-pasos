@@ -1,0 +1,11 @@
+	var num = 0
+	var num2 = 8
+    
+fun main() {
+	while(num<10*num2){
+        num+=num2
+        //println(num)
+        
+        println(num)
+    }
+}
