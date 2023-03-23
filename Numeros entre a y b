@@ -1,0 +1,13 @@
+	var inicio = 8
+	var fin = 2
+fun main() {
+    if (inicio>fin){
+        for (num in (fin..inicio).reversed()){ 
+    	println(num)
+    	}
+    }else{
+        for (num in inicio..fin){
+        println(num)
+    	}
+    }
+}
