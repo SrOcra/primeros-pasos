@@ -1,0 +1,9 @@
+	var num = 50
+	var num2 = 1
+    
+fun main() {
+	while(num>0){
+   		  println(num)
+   		  num-=num2
+    }
+}
