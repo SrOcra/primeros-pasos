@@ -1,0 +1,15 @@
+	var count = 0
+	var nombre = "He found his art never progressed when he literally used his sweat and tears. She was disgusted he couldn’t tell the difference between lemonade and limeade. Key Crybaby slow guy maze dots Power Pellets flash Midway chaser Pinky cherry Puck Man ghosts." 
+    
+fun main() {
+	for(letra in nombre){
+        if (letra=='e'){
+            print(letra)
+        	count++
+    	}else{
+        	print(letra)
+    	}
+		
+    }
+    println(count)
+}
