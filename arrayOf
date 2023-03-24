@@ -1,0 +1,28 @@
+	var arreglo = arrayOf(1,2,3,3,4,55,6,6,7,8,3,9,9,9,10)
+fun main() {
+    var mayor=1
+    var menor=1
+    var suma=0
+    
+    for(i in arreglo.indices){
+        if(arreglo[i]>mayor){
+            mayor=arreglo[i]
+        }
+    }
+    println(mayor)
+    for(i in arreglo.indices){
+        if(arreglo[i]<menor){
+            menor=arreglo[i]
+        }
+    }
+    println(menor)
+    for (i in arreglo.indices){
+        if(arreglo[i]count)
+        count++
+    }
+    println(count)
+    else{
+        print("Error")
+    }
+    
+}
