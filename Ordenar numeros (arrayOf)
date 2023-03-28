@@ -1,0 +1,13 @@
+fun main() {
+    var baraja = arrayOf (1,2,3,4,5,6,7,12,8,9,10,11,14,15,13)
+	var aux = 0
+    
+    for (i in baraja.indices){
+  		(baraja[i]<aux){
+        aux=baraja[i]
+    }
+    
+}     
+//for (i in baraja.indices){
+//		baraja		
+println(baraja[i])
