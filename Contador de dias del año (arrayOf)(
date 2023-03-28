@@ -1,0 +1,11 @@
+	
+fun main() {
+    var meses = arrayOf ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+	var dias = arrayOf (31,28,31,30,31,30,31,31,30,31,30,31)
+   	var count = 0
+    for (i in meses.indices){
+    	count += dias[i]
+    }
+    println(count)
+}    
+//println(meses[i])  
