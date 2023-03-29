@@ -1,0 +1,25 @@
+	var numeros = arrayOf(1,2,3,4,56,8,9,12,3,1,23,4,57,8,3,1)
+    
+	var posicion = 0
+	var tem = 0
+	var menor = 0
+fun main() {
+    for (i in 0..numeros.size-1){
+        menor=numeros[i]
+        posicion=i
+        for (j in i+1..numeros.size-1){
+        	if (numeros[j]<menor){
+            	menor = numeros[j]
+                posicion = j
+            }
+        }
+        	if(posicion!=i){
+                tem=numeros[i]
+                numeros[i]=numeros[posicion]
+                numeros[posicion]=tem
+            }
+        }
+		for (k in numeros.indices){
+        	println(numeros[k])
+    	}
+}
