@@ -1,0 +1,27 @@
+	var letra= arrayOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+	var contraseña = "cpu"
+	var busqueda = false
+fun main() {
+    var i = 0
+    var j = 0
+    var k = 0
+    while (busqueda == false && i < letra.size){
+        while (busqueda == false && j < letra.size){
+            while (busqueda == false && k < letra.size){
+                if(contraseña == letra[i].toString()+letra[j].toString()+letra[k].toString()){ 
+        			println("${letra[i]}${letra[j]}${letra[k]}" )
+                    busqueda = true
+                    
+                }else{
+                    
+        			println("${letra[i]}${letra[j]}${letra[k]}" )
+                }
+                k++
+            }
+            k=0
+            j++
+        }
+        j=0
+        i++
+    }
+}
