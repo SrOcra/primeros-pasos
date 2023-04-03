@@ -1,0 +1,15 @@
+fun main() {
+     var arreglo = arrayOf (1,2,3,4,5,6,7,8,9)
+ 	var arreglo2 = IntArray(arreglo.size+1)
+	var aux = 10
+    for (i in arreglo2.indices){
+         if(i == 0){
+             arreglo2[0]=aux
+         }else{
+           	arreglo2[i]=arreglo[i-1]  
+         }
+    }
+    for (i in arreglo2.indices){
+        println(arreglo2[i])
+    }
+}
