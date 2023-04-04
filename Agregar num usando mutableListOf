@@ -1,7 +1,14 @@
-	var arreglo = arrayOf (1,2,3,4,5)
- 	var list = mutableListOf(1,2,3,4,5)
 fun main() {
-    println(list)
-    list.add(5)
-	print(list)
+     var list = mutableListOf<Int>()
+ for(i in 0..100){
+     list.add(i)
+ }
+ for(i in list.indices){
+     println(list[i])
+ }
+ /*println(list)
+ list.add(9)
+ println(list)
+ list.add(0,0)
+ println(list)*/
 }
