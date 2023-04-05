@@ -14,3 +14,19 @@ fun main() {
         println(list3[i])
     }
 }
+OTRA CON MAS VALORES
+fun main() {
+    var array = arrayOf(0,1,2,3,4,5,6,7,8,9)
+    var array2 = arrayOf(10,11,12,13,14,15,16,17,18,19)
+    var array3 = IntArray(array.size + array2.size)
+   for (i in array3.indices){
+        if(i < array.size){
+            array3[i]=array[i]
+        }else{
+            array3[i]=array2[i-array.size]
+        }
+    }
+    for (i in array3.indices){
+        println(array3[i])
+    }
+}
