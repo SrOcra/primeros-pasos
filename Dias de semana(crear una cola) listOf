@@ -1,0 +1,14 @@
+fun main() {
+	var list = mutableListOf("Lunes","Martes","Miercoles","Jueves")
+	var array =arrayOf ("Viernes","Sabado","Domingo")
+		list+=array
+		list.removeAt(4)
+		println(list)
+	
+	for(i in list.indices){
+  var primero=list.first()
+    	list.removeFirst()
+    	list.add(primero)
+    	println(list)
+	}
+}
