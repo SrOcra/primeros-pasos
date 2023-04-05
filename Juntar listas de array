@@ -1,0 +1,16 @@
+fun main() {
+    var list = arrayOf (1,2,3,4,5)
+    var list2 = arrayOf (6,7,8,9,10)
+    var list3 = IntArray(list.size + list2.size)
+   	
+    for (i in list3.indices){
+         if(i < list.size){
+           	list3[i] = list[i]  
+         }else{
+            list3[i] = list2[i-list.size]
+         }
+    }
+    for (i in list3.indices){
+        println(list3[i])
+    }
+}
