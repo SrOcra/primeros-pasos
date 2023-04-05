@@ -1,0 +1,9 @@
+fun main() {
+var list = mutableListOf("Lunes","Martes","Miercoles","Jueves")
+list.add(4,"Viernes")
+list.add(1,"Sabado")
+list.add(0,"Domingo")
+list[0]="pascua"
+list.size
+print(list[list.size-1])
+}
