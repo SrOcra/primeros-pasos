@@ -1,0 +1,17 @@
+fun main() {
+    var list = mutableListOf("lunes","martes","miercoles","jueves")
+    list.add("viernes")
+    list.add("sabado")
+    list.add("domingo")
+    var list2 = mutableListOf<String>()
+   for (i in list.indices){
+       	list2.add(0, list.first())
+        list.removeFirst()     
+    }
+      println(list2)
+    for (i in list2.indices){
+        list.add(0, list2.first())
+        list2.removeFirst()
+    }
+    print(list)
+}
