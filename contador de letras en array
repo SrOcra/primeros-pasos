@@ -1,9 +1,8 @@
-	//canciones de nene malo
-	var nombre = arrayOf("nena","es un secreto","el garrote", "contigo amanecer", "danza dembow", "atrevida")
-    var count = 0
-    var save = IntArray(nombre.size)
 fun main() {
-    var letra = "a"
+    //canciones de nene malo
+    var nombre = arrayOf("nena","es un secreto","el garrote", "contigo amanecer", "danza dembow", "atrevida")
+    var count = 0
+	var letra = "a"
     
 	for(i in nombre.indices){
         for(k in nombre[i]){
