@@ -5,7 +5,7 @@ fun main() {
     list+=
     var newList = list.filter(it.toUpperCase().contains("M"))
     //.toUpperCase() -> pasa de minuscula a mayus
-    //.toUpperCase() -> pasa de mayus a minus
+    //.toLowerCase() -> pasa de mayus a minus
     //.filter{it} -> filtrar
     //.contains -> pregunta si tiene
     println(newList)
