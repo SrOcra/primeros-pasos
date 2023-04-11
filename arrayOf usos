@@ -1,1 +1,140 @@
+	//BUSQUEDA DE CONTRASEÑA CON 3 DIGITOS
+  var letra= arrayOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+	var contraseña = "cpu"
+	var busqueda = false
+fun main() {
+    var i = 0
+    var j = 0
+    var k = 0
+    while (busqueda == false && i < letra.size){
+        while (busqueda == false && j < letra.size){
+            while (busqueda == false && k < letra.size){
+                if(contraseña == letra[i].toString()+letra[j].toString()+letra[k].toString()){ 
+        			println("${letra[i]}${letra[j]}${letra[k]}" )
+                    busqueda = true
+                    
+                }else{
+                    
+        			println("${letra[i]}${letra[j]}${letra[k]}" )
+                }
+                k++
+            }
+            k=0
+            j++
+        }
+        j=0
+        i++
+    }
+}
 
+//JUNTAR LISTAS
+fun main() {
+    var list = arrayOf (1,2,3,4,5)
+    var list2 = arrayOf (6,7,8,9,10)
+    var list3 = IntArray(list.size + list2.size)
+   	
+    for (i in list3.indices){
+         if(i < list.size){
+           	list3[i] = list[i]  
+         }else{
+            list3[i] = list2[i-list.size]
+         }
+    }
+    for (i in list3.indices){
+        println(list3[i])
+    }
+}
+//OTRA CON MAS VALORES
+fun main() {
+    var array = arrayOf(0,1,2,3,4,5,6,7,8,9)
+    var array2 = arrayOf(10,11,12,13,14,15,16,17,18,19)
+    var array3 = IntArray(array.size + array2.size)
+   for (i in array3.indices){
+        if(i < array.size){
+            array3[i]=array[i]
+        }else{
+            array3[i]=array2[i-array.size]
+        }
+    }
+    for (i in array3.indices){
+        println(array3[i])
+    }
+}
+//AGREGAR UN NUM DENTRO DE UNA LISTA
+fun main() {
+     var arreglo = arrayOf (1,2,3,4,5,6,7,8)
+ 	var arreglo2 = IntArray(arreglo.size+1)
+	var aux = 9
+    var pos = 1
+    for (i in arreglo2.indices){
+         if(i == pos){
+             arreglo2[i]=aux
+         }else if(i > pos){
+           	arreglo2[i]=arreglo[i-1]  
+         }else{
+             arreglo2[i]=arreglo[i]
+         }
+    }
+    for (i in arreglo2.indices){
+        println(arreglo2[i])
+    }
+}
+//ORDENAR LISTA (SELECCION)
+ fun main() {
+  var numeros = arrayOf(1,2,3,4,56,8,9,12,3,1,23,4,57,8,3,1)
+  var posicion = 0
+	var tem = 0
+	var menor = 0
+    for (i in 0..numeros.size-1){
+        menor=numeros[i]
+        posicion=i
+        for (j in i+1..numeros.size-1){
+        	if (numeros[j]<menor){
+            	menor = numeros[j]
+                posicion = j
+            }
+        }
+        	if (posicion!=i){
+                tem=numeros[i]
+                numeros[i]=numeros[posicion]
+                numeros[posicion]=tem
+            }
+        }
+		for (k in numeros.indices){
+        	println(numeros[k])
+    	}
+}
+//CONTADOR DIAS DEL AÑO
+fun main() {
+    var meses = arrayOf ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+	  var dias = arrayOf (31,28,31,30,31,30,31,31,30,31,30,31)
+   	var count = 0
+    for (i in meses.indices){
+    	count += dias[i]
+    }
+    println(count)
+}    
+//AGREGADO EN DIFF POSICION
+fun main() {
+    var arreglo = arrayOf (1,2,3,4,5,6,7,8)
+ 	  var arreglo2 = IntArray(arreglo.size+1)
+	  var aux = 9
+    var pos = 10
+  if(pos<=arreglo2.size){   
+    for (i in arreglo2.indices){
+         if(i == pos){
+             arreglo2[i]=aux
+         }else if(i > pos){
+           	arreglo2[i]=arreglo[i-1]  
+         }else{
+             arreglo2[i]=arreglo[i]
+         }
+    }
+    for (i in arreglo2.indices){
+        println(arreglo2[i])
+    }
+   }else{
+      print("no se puede imprimir porque la pos es mayor que el array")
+  } 
+}
+//
