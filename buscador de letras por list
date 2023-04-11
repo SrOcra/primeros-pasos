@@ -1,0 +1,12 @@
+fun main() {
+    var list = mutableListOf("lunes","martes","miercoles","jueves")
+    var array = arrayOf("viernes","sabado","domingo")
+    var palabra = "mi"
+    list+=
+    var newList = list.filter(it.toUpperCase().contains("M"))
+    //.toUpperCase() -> pasa de minuscula a mayus
+    //.toUpperCase() -> pasa de mayus a minus
+    //.filter{it} -> filtrar
+    //.contains -> pregunta si tiene
+    println(newList)
+}
