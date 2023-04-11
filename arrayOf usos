@@ -79,6 +79,25 @@ fun main() {
         println(arreglo2[i])
     }
 }
+//AGREGAR POSICION A LISTA
+	var arreglo = arrayOf (1,2,3,4,5)
+ 	var arreglo1 = IntArray(arreglo.size+1)
+	var aux = 6
+fun main() {
+    
+     	for (i in arreglo1.indices){
+         	if(i == arreglo.size){
+             	arreglo1[i]=aux
+         }else{
+          	arreglo1[i]=arreglo[i]
+         }
+    }
+    
+    for (i in arreglo1.indices){
+        println(arreglo1[i])
+    }
+	
+}
 //ORDENAR LISTA (SELECCION)
  fun main() {
   var numeros = arrayOf(1,2,3,4,56,8,9,12,3,1,23,4,57,8,3,1)
@@ -137,4 +156,22 @@ fun main() {
       print("no se puede imprimir porque la pos es mayor que el array")
   } 
 }
-//
+//ORDENAR LISTA
+fun main() {
+	var numeros = arrayOf(1,2,3,4,56,8,9,12,3,1,23,4,57,8,3,1)
+   	var aux = 0
+    	for (i in numeros.indices){
+        	for (j in 0..numeros.size-2){
+        		if (numeros[j]>numeros[j+1]){
+            	aux = numeros[j]
+                numeros[j] = numeros[j+1]
+                numeros[j+1] = aux
+               
+            }
+        }	
+    }
+	for (i in numeros.indices){
+        println(numeros[i])
+    }
+}
+
