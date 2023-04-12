@@ -1,0 +1,20 @@
+fun main() {
+	var text = "esto es un texto semialeatorio generado por el subconciente"
+    var newtext = ""
+    
+    	for (i in text.indices){
+         	if(i > 0){
+                if(text[i-1] == ' '){  
+            		newtext+=text[i].uppercase()
+                }else{
+                	newtext += text[i]
+                }
+            }else{
+                newtext += text[i]
+            }
+    		
+        }
+    		newtext=newtext.replace(" ", "")
+  			newtext[0].uppercase() = text
+  			print(newtext)
+   }
