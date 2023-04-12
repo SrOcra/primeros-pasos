@@ -1,0 +1,11 @@
+fun main() {
+    var capital = 2000
+    var tic = 0.06
+    var meses = 12 	// M=C*(1+I(tic))^meses
+       		 	   	// M=2000*(1+6)^12
+    var elev = tic+1
+    for(i in 2..meses){
+        elev*=tic+1
+    }
+    print(elev*capital)
+}
