@@ -19,25 +19,20 @@ fun main() {
 //otro ejemplo con una condicion mas
 fun main() {
      for (i in 1..100){
-        if (i%3 == 0 && i%5 == 0 && i%7 == 0){
-              println("Modo Serio xd")
+        if (i%3 == 0 || i%5 == 0 || i%7 == 0){
+            if (i%3 == 0){
+                print("Modo ")
+            }
+            if(i%5 == 0){
+                print("Serio " )
+            }
+            if (i%7 == 0){
+                print("xd ")
+            }
+             println("")
+       	}else{
+            println(i)
         }
-        else if (i%3 == 0 && i%5 == 0){
-            println("Modo Serio")
-        }
-        else if (i%3 == 0){
-            println("Modo")
-        }
-        else if(i%5 == 0){
-            println("Serio")
-        }
-        else if (i%7 == 0){
-            println("xd")
-        }
-         else{
-            println(i) 
-        }
-       
     }
    
 }
