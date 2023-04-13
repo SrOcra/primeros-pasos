@@ -6,3 +6,16 @@ fun main() {
     }
     print(texto)
 }
+//otro similar
+//guardar una lista de palabras o simbolos que reemplaze todo el texto?
+fun main() {
+    var text = "Esto es un texto que podria ser secuestrado porque la contraseña es 1234"
+    //var encripta = text.random()
+    var datos = listOf('^','@','º','¡','ç','}','3','ª','€','%','*','=','-','_',':','#','"','+',',',']','~','?','¿','´','ñ')
+    var datos2 = listOf('a','b','c','d','e','f','3','ª','€','%','*','=','-','_',':','#','"','+',',',']','~','?','¿','´','ñ')
+  
+    for(i in text){
+        text=text.replace(i,datos.random());
+    }
+    print(text)
+}
