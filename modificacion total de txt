@@ -1,0 +1,8 @@
+fun main() {
+    var texto = "let's get down, let's get down to business"
+    var encript = listOf('|','@','%','¬','&','=','/','!','?','Ç','ç',';','^','*','}','_','-','<','$','~','¨',';')
+        for(i in texto){
+            texto=texto.replace(i,encript.random())
+    }
+    print(texto)
+}
