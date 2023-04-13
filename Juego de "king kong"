@@ -1,0 +1,18 @@
+//Numeros del 1 al 100, si es multiplo de "3" que diga king, multiplo de "5" kong, multiplo de "3" y "5" que diga "KING KONG"
+fun main() {
+     for (i in 1..100){
+        if (i%3 == 0 && i%5 == 0 ){
+              println("King Kong")
+        }
+        else if (i%3 == 0){
+            println("King")
+        }
+        else if(i%5 == 0){
+            println("Kong")
+        }else{
+            println(i) 
+        }
+       
+    }
+   
+}
