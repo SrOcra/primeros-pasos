@@ -1,0 +1,30 @@
+fun main() {
+		crearTriangulo(8)
+}
+	
+fun factorial(n1:Int):Int {
+		var miNum = 1;
+		for(i in 1..n1) {
+			miNum*=i
+		}
+		return miNum
+	}
+	
+fun combinatoria(n1:Int, n2:Int):Int {
+		return (factorial(n1) / (factorial(n2)*factorial(n1-n2)))
+	}
+fun crearTriangulo(n_filas:Int) {
+		for(fila in 1..n_filas) {
+			for(i in 0..n_filas-fila) {
+				print(" ")
+			}
+			if(fila == 1) {
+				println("1")
+			}else {
+				for(i in 0..fila) {
+					print("${combinatoria(fila, i)}")
+				}
+				println()
+			}
+		}
+}
