@@ -36,3 +36,14 @@ fun main() {
     }
    
 }
+//otra forma con when
+fun main(){
+     for(i in 1..100){
+          when(i){
+               in 0..100 step 15 -> println("king kong")
+               in 0..100 step 5 -> println("kong")
+               in 0..100 step 3 -> println("king ")
+               else -> println(i)
+               }
+     }
+}
