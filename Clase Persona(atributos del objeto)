@@ -1,0 +1,24 @@
+fun main() {
+    var marcos = Persona()
+    println(marcos.nombre)
+    marcos.imprimirPersona()
+    marcos.IMC()
+    marcos.peso = 74
+    marcos.IMC()
+    
+}
+class Persona(){
+    var nombre = "marcos"
+    var edad = 23
+    var altura = 1.72
+    var peso = 65
+    var dni = 42000000
+    var grupoSangre = "O positivo"
+    //metodos de la clase van adentro
+	fun imprimirPersona(){
+    println("la persona $nombre y su altura es de $altura")
+	}	
+	fun IMC(){
+    println("el IMC de $nombre es de ${peso/altura*altura}")
+	}
+}
