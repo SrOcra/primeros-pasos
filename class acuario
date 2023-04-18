@@ -23,3 +23,31 @@ class Acuario(){
         println("el acuario tiene una capacidad de mantener $pez peces")
     }
 }
+_______________________________________________________________________________________________________________________
+
+fun main() {
+     var acuario = Acuario()
+    acuario.imprimirAcuario()
+    acuario.calculo() 
+    acuario.cantidadAgua()
+}
+class Acuario(){
+    var altura = 5000
+    var base = 3000
+    var ancho = 7000
+    fun imprimirAcuario(){
+        println("el acuario tiene una altura de $altura, base $base y ancho de $ancho")
+    }
+    fun calculo(){
+        var resultado = altura*base*ancho
+        resultado/=1000
+        println("el acuario tiene una cantidad de $resultado litros")
+    }
+    fun cantidadAgua(){
+        var resultado = altura*base*ancho
+        resultado/=1000
+        resultado*=90
+        resultado/=100
+        println("el acuario tiene una capacidad de mantener $resultado de mts. cub.")
+    }
+}
