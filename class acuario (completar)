@@ -1,0 +1,18 @@
+fun main() { //ahora hacer un acuario
+    var acuario =  Acuario()
+    acuario.atributosAcuario()
+    acuario.capacidadAcuario()
+}
+class Acuario(){
+    var base = 40
+    var altura = 20
+    var ancho = 60
+    //metodos de la clase van adentro
+	fun atributosAcuario(){
+    println("el acuario tiene una base de $base, una altura de $altura y una base de $base")
+	}
+    fun capacidadAcuario(){
+        var capacidadLitro = (base*altura*ancho)/100
+       println("Su capacidad es de $capacidadLitro centimetros cubicos)
+    }
+}
