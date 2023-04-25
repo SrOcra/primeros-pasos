@@ -1,0 +1,59 @@
+fun main(args: Array<String>) {
+    val vehiculos = auto(5,"ñorsa","azy245","chevrolet", 8)
+    vehiculos.imprimir()
+    vehiculos.calcularPrecio()
+    vehiculos.calcularDias()
+    val furgo = furgoneta(2366,"transit","asd214","ford", 7)
+    furgo.imprimir()
+    furgo.calcularPrecio()
+    furgo.calcularDias()
+    val camio = camioneta(600,"amarok","pmu892","volkswagen", 5)
+    camio.imprimir()
+    camio.calcularPrecio()
+    camio.calcularDias()
+    val cole = colectivo(33,"sprinter","ryo123","mercedes", 4)
+    cole.imprimir()
+    cole.calcularPrecio()
+    cole.calcularDias()
+}
+open class vehiculo(var modelo:String, var patente:String,var marca:String,var dias:Int) {
+
+    fun imprimir(){
+        println("$modelo , $patente , $marca , $dias")
+    }
+    open fun calcularPrecio(){
+        println(2000+(100*2)*dias)
+    }
+}
+class furgoneta(var carga:Int,modelo:String,patente:String,marca:String,dias:Int):vehiculo(modelo,patente,marca,dias){
+    override fun calcularPrecio(){
+        println(3000+ (5*carga))
+    }
+    fun calcularDias(){
+        println((3000+(100*carga))*dias)
+    }
+}
+class auto(var puertas:Int,modelo:String,patente:String,marca:String,dias:Int):vehiculo(modelo,patente,marca,dias) {
+    override fun calcularPrecio() {
+        println(2000+ (100*puertas))
+    }
+    fun calcularDias(){
+        println((3000+(100*puertas))*dias)
+    }
+}
+class colectivo(var asientos:Int,modelo:String,patente:String,marca:String,dias:Int):vehiculo(modelo,patente,marca,dias) {
+    override fun calcularPrecio(){
+        println(3000+ (100*asientos))
+    }
+    fun calcularDias(){
+        println((3000+(100*asientos))*dias)
+    }
+}
+class camioneta(var kilometros:Int,modelo:String,patente:String,marca:String,dias:Int):vehiculo(modelo,patente,marca,dias) {
+    override fun calcularPrecio(){
+        println(3000+ (500*kilometros))
+    }
+    fun calcularDias(){
+        println((3000+(100*kilometros))*dias)
+    }
+}
